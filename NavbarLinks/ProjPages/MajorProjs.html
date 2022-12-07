@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jan Quimpo's Personal Site</title>
+    <link rel="stylesheet" href="/IS117WebsiteProject/stylesheets/ProjPagesStyles.css">
+</head>
+<body>
+<div id="navbar">
+    <a href="/IS117WebsiteProject/index.html">Home</a>
+    <a href="/IS117WebsiteProject/NavbarLinks/PersonalLife.html">Personal Life</a>
+    <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+            <a href="#">Major Projects</a>
+            <a href="MinorProjs.html">Minor Projects</a>
+        </div>
+    </div>
+    <a href="/IS117WebsiteProject/NavbarLinks/AboutMe.html">About Me</a>
+    <a href="/IS117WebsiteProject/NavbarLinks/ContactMe.html" style="float: right">Contact Me</a>
+</div>
+<div style="margin-top:100px;padding:15px 15px 2500px;font-size:30px">
+    <h1>Major Projects</h1>
+    <div class="parallax"></div>
+    <div class="row">
+        <div class="column left">
+            <h3>Python Pandas</h3>
+            <p>
+                In my "Building Web Applications" class, my professor assigned a project where we would have to work
+                with a data set - state and population.
+                For the requirements, the project would be grabbing data of the given csv file. It should get the min
+                and max,
+                calculate the standard deviation, calcuate a sample size of a given confidence interval and margin of
+                errors,
+                and print the results to a csv file in a desginated folder using pandas.
+                <br><br>
+                The code shown on the right takes in a .csv file - state_population.csv, reads and puts it into a pandas
+                data frame for calculations.
+                As mentioned before, the program is supposed to get the min and max, the length or row count, and the
+                calculate the standard deviation.
+                Separately from these calculations, the program had to calculate a sample size of varying confidence
+                intervals for each margin of error value.
+                In the third screenshot, a nested for loop is used to iterate through each margin of error with
+                iterating confidence intervals -
+                thus producing fifteen .csv files named as such - sample_data_number_confidence interval_margin of
+                error_line count.
+            </p>
+            <h3>Arcade Website</h3>
+            <p>
+                I took a class over the summer - "Internet Applications", where the class would choose among three
+                diffeent options,
+                an online shop, a banking site, or an arcade website. All these sites were made with HTML, CSS,
+                JavaScript, PHP, and SQL.
+                I chose to do the arcade prject, where there was a login function for the user to create an account for
+                saving scores and credits.
+                There was a game with the site where the user can play a game - snake, to earn credits to create a
+                competition and compete for
+                spots on a daily, weekly, monthly, or all-time leaderboards. The user's login information, scores,
+                credits, and user roles where kept.
+            </p>
+        </div>
+        <div class="column right">
+            <h2>Project Gallery</h2>
+            <h4>Pandas</h4>
+            <img src="/IS117WebsiteProject/images/app_initP1.png" alt="app_init pg 1">
+            <img src="/IS117WebsiteProject/images/app_initP2.png" alt="app_init pg 2">
+            <img src="/IS117WebsiteProject/images/app_initP3.png" alt="app_init pg 3">
+            <img src="/IS117WebsiteProject/images/data_output_folder.png" alt="output folder">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 11/2022 Jan Quimpo</p>
+    </footer>
+</div>
+</body>
+</html>

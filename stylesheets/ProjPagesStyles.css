@@ -1,0 +1,151 @@
+/*body styling*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*card styling*/
+.flip-card {
+    background-color: transparent;
+    width: 445px;
+    height: 590px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*navbar styling*/
+#navbar {
+    background-color: #333;
+    padding: 25px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+#navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+#navbar a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+/*parallax class*/
+.parallax {
+    background-image: url("/images/fallsunset.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-family: Arial;
+    background-color: #333;
+    color: white;
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 115px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    align-content: center;
+    display: block;
+}
+.dropdown-content a:hover {background-color: blueviolet; width: 115px}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: blueviolet;}
+
+
+/*left and right columns*/
+.column {
+    float: left;
+    padding: 10px;
+}
+.right {
+    width: 55%;
+}
+.left {
+    width: 45%
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*about me list styling*/
+
+.skills-list {
+    list-style: circle;
+}
+
